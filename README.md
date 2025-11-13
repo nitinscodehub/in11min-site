@@ -16,13 +16,6 @@ This repo contains HTML, CSS, JavaScript and a collection of study PDFs used as 
 ## Screenshots
  <img width="1912" height="890" alt="Screenshot From 2025-11-13 17-57-17" src="https://github.com/user-attachments/assets/030be582-e3c1-413b-9c96-f34d012cb4c4" />
  <img width="1912" height="890" alt="Screenshot From 2025-11-13 17-58-13" src="https://github.com/user-attachments/assets/89e1e0cc-8102-4728-9c96-0e984489a556" />
-
-
-* ![Site screenshot - home]<img width="1912" height="890" alt="Screenshot From 2025-11-13 17-57-17" src="https://github.com/user-attachments/assets/030be582-e3c1-413b-9c96-f34d012cb4c4" />
-
-* ![YouTube screenshot]<img width="1912" height="890" alt="Screenshot From 2025-11-13 17-58-13" src="https://github.com/user-attachments/assets/89e1e0cc-8102-4728-9c96-0e984489a556" />
-
-
 ---
 
 ## Live demo
