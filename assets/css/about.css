@@ -1,0 +1,237 @@
+.about-page {
+    padding: 140px 0 100px;
+    background-color: var(--light);
+}
+
+[data-theme="dark"] .about-page {
+    background-color: #141824;
+}
+
+.about-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 3.5rem;
+}
+
+.about-header h1 {
+    font-size: clamp(2.2rem, 3vw, 2.8rem);
+    margin-bottom: 1rem;
+    color: #11131d;
+}
+
+[data-theme="dark"] .about-header h1 {
+    color: var(--white);
+}
+
+.about-header p {
+    color: var(--gray);
+    font-size: 1.05rem;
+}
+
+[data-theme="dark"] .about-header p {
+    color: var(--gray-light);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3.5rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 40px;
+    object-fit: cover;
+    border: 6px solid rgba(67, 97, 238, 0.3);
+    box-shadow: var(--shadow-md);
+}
+
+.about-text h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+}
+
+.about-text p {
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+}
+
+[data-theme="dark"] .about-text p {
+    color: var(--gray-light);
+}
+
+.about-text ul {
+    list-style: none;
+    display: grid;
+    gap: 0.85rem;
+}
+
+.about-text li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+.about-text li i {
+    margin-top: 0.15rem;
+    color: var(--success);
+}
+
+.about-text li span {
+    flex: 1;
+    line-height: 1.6;
+}
+
+[data-theme="dark"] .about-text li {
+    color: var(--white);
+}
+
+.impact {
+    margin-bottom: 4rem;
+}
+
+.impact-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2.5rem;
+    background-color: var(--white);
+    border-radius: 24px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow-sm);
+}
+
+.impact-card div {
+    padding-inline: 0.5rem;
+    border-left: 3px solid rgba(67, 97, 238, 0.25);
+}
+
+.impact-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.impact-card p {
+    color: var(--gray);
+    margin: 0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+[data-theme="dark"] .impact-card {
+    background-color: #161b29;
+    border-color: rgba(73, 99, 168, 0.25);
+}
+
+[data-theme="dark"] .impact-card div {
+    border-left-color: rgba(67, 97, 238, 0.45);
+}
+
+[data-theme="dark"] .impact-card p {
+    color: var(--gray-light);
+}
+
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: clamp(2rem, 2.6vw, 2.4rem);
+    margin-bottom: 2.5rem;
+}
+
+.team-card {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 2.5rem 2.25rem;
+    background-color: var(--white);
+    border-radius: 24px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+[data-theme="dark"] .team-card {
+    background-color: #161b29;
+    border-color: rgba(73, 99, 168, 0.25);
+}
+
+.team-card img {
+    width: 160px;
+    height: 160px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 6px solid rgba(67, 97, 238, 0.2);
+}
+
+.team-card p {
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+
+[data-theme="dark"] .team-card p {
+    color: var(--gray-light);
+}
+
+.team-card .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.team-card .social-links a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(67, 97, 238, 0.12);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.team-card .social-links a:hover {
+    transform: translateY(-4px);
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+[data-theme="dark"] .team-card .social-links a {
+    background-color: rgba(67, 97, 238, 0.25);
+}
+
+@media (max-width: 768px) {
+    .about-page {
+        padding: 120px 0 80px;
+    }
+
+    .impact-card {
+        padding: 2rem;
+    }
+
+    .about-image img {
+        width: 180px;
+        height: 180px;
+    }
+}
+

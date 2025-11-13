@@ -1,0 +1,191 @@
+/* notes.css - Custom styles for notes page */
+
+.notes-page {
+    padding: 140px 0 100px;
+    background-color: var(--light);
+}
+
+[data-theme="dark"] .notes-page {
+    background-color: #141824;
+}
+
+.page-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 3.5rem;
+}
+
+.page-header h1 {
+    font-size: clamp(2.2rem, 3vw, 2.8rem);
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    color: var(--gray);
+    font-size: 1.05rem;
+}
+
+[data-theme="dark"] .page-header p {
+    color: var(--gray-light);
+}
+
+.subject-section {
+    margin-bottom: 4.5rem;
+}
+
+.subject-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.subject-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: rgba(67, 97, 238, 0.15);
+    color: var(--primary);
+    font-size: 1.6rem;
+}
+
+[data-theme="dark"] .subject-icon {
+    background-color: rgba(67, 97, 238, 0.25);
+}
+
+.subject-header h2 {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.subject-header p {
+    color: var(--gray);
+    margin: 0;
+}
+
+[data-theme="dark"] .subject-header p {
+    color: var(--gray-light);
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.75rem;
+}
+
+.note-card {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.75rem;
+    border-radius: 22px;
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+[data-theme="dark"] .note-card {
+    background-color: #161b29;
+    border-color: rgba(73, 99, 168, 0.25);
+}
+
+.note-icon {
+    font-size: 2rem;
+    color: #ef476f;
+    min-width: 40px;
+}
+
+.note-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.note-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.65rem;
+}
+
+.note-info p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.7;
+}
+
+[data-theme="dark"] .note-info p {
+    color: var(--gray-light);
+}
+
+.note-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-bottom: 1.25rem;
+}
+
+.note-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+[data-theme="dark"] .note-meta {
+    color: var(--gray-light);
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.4rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-self: flex-start;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.download-btn:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .subject-section {
+        margin-bottom: 3.5rem;
+    }
+
+    .subject-header {
+        flex-direction: column;
+    }
+
+    .subject-icon {
+        width: 54px;
+        height: 54px;
+        font-size: 1.4rem;
+    }
+
+    .note-card {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+}
